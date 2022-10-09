@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Box Shadow Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>box shadow generator</h1>
+      <div class="box">
+        <div class="element">
+          <div id="square"></div>
+        </div>
+
+        <div class="sliders">
+          <div class="slider-inputs">
+            <label for="h-shadow">Horizontal Shadow Length</label>
+            <input
+              type="range"
+              name=""
+              id="h-shadow"
+              max="100"
+              min="-100"
+              value="0"
+              />
+          </div>
+
+            <div class="slider-inputs">
+              <label for="v-shadow">Vertical Shadow Length</label>
+              <input
+                type="range"
+                name=""
+                id="v-shadow"
+                max="100"
+                min="-100"
+                value="0"
+              />
+            </div>
+
+            <div class="slider-inputs">
+              <label for="blur-radius">Blur Radius:</label>
+              <input
+                type="range"
+                name=""
+                id="blur-radius"
+                max="100"
+                min="0"
+                value="0"
+              />
+            </div>
+
+            <div class="slider-inputs">
+              <label for="spread-radius">Spread Radius:</label>
+              <input
+                type="range"
+                name=""
+                id="spread-radius"
+                max="50"
+                min="-50"
+                value="0"
+              />
+            </div>
+
+            <div class="slider-inputs">
+              <label for="shadow-color">Shadow Color:</label>
+              <input type="color" name="" id="shadow-color" />
+            </div>
+
+            <div class="slider-inputs">
+              <label for="shadow-color-opacity">Color Opacity:</label>
+              <input
+                type="range"
+                name=""
+                id="shadow-color-opacity"
+                max="1"
+                min="0"
+                step="0.1"
+                value="1"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="sadow-inset">Inset Shadow</label>
+              <input type="checkbox" id="shadow-inset" />
+            </div>
+          </div>
+        </div>
+        <div class="code-textarea">
+            <textarea rows="1" id="code"></textarea>
+          </div>
+      </div>
+      
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
